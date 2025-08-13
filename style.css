@@ -1,33 +1,24 @@
 body {
-  background-color: #ffffff;
+  background-color: #282727;
   color: #7c72cf;
   font-family: cursive;
   width: 100%;
-  padding: 8px;
 }
 
-.main-header {
-  background-image: url('wave (6).svg');
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  padding: 2cm;
+.navbar-item{
+  font-size: large;
 }
 
-.header-text {
-  text-align: left;
-  flex: 1;
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
 
-h1{ 
-  font-size: 5rem;
-  margin: 5px 10px 15px;
-  font-family: Arial, Helvetica, sans-serif;
+nav {
+  font-size: 30px
+
 }
 
-.main-header img {
-  height: 500px;
-  width: auto;
+footer {
+  font-size: 20px
 }
