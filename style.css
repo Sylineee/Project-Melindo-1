@@ -5,8 +5,13 @@ body {
   width: 100%;
 }
 
-.navbar-item{
-  font-size: large;
+.nav-item{
+  font-size: 1.8rem;
+  color : white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
 }
 
 .carousel-item img {
