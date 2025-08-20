@@ -15,7 +15,7 @@ body {
   color: rgb(0, 0, 0) !important; 
 }
 
-/* Container utama biar content & image sejajar */
+
 .home {
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,6 @@ body {
   background-color: white;
 }
 
-/* Teks */
 .home-content h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -38,7 +37,6 @@ body {
   margin-top: 0;
 }
 
-/* Gambar */
 .home-img img {
   border-radius: 50%;
   width: 300px;
