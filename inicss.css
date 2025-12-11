@@ -51,28 +51,29 @@
         }
 
         /* bunga: di luar kotak, jadi bebas keluar */
-.hero-stage img{
-  position: absolute;
-  pointer-events: none;
-  user-select: none;
-}
+        .hero-stage img{
+        position: absolute;
+        pointer-events: none;
+        user-select: none;
+        }
 
-.bungaatas{
-  width: clamp(140px, 18vw, 260px);
-  right: -2%;
-  top: -2%;
-  z-index: 10;
-}
+        .bungaatas{
+        width: clamp(140px, 18vw, 260px);
+        right: -2%;
+        top: -2%;
+        z-index: 10;
+        }
 
-.bungabawah{
-  width: clamp(160px, 20vw, 280px);
-  left: -3%;
-  bottom: -6%;
-  z-index: 10;
-}
+        .bungabawah{
+        width: clamp(160px, 20vw, 280px);
+        left: -3%;
+        bottom: -6%;
+        z-index: 10;
+        }
+
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #ffd4e5 0%, #ffc0d9 100%);
+            background: #FFD8D8;
             border-radius: 20px;
             margin: 20px 40px;
             padding: 80px 60px;
@@ -85,11 +86,10 @@
         }
 
         .hero h1 {
-            font-size: 140px;
+            font-size: 170px;
             font-weight: 300;
-            font-family: sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgba(255, 255, 255, 0.9);
-            letter-spacing: 20px;
             top: -70px;
             text-align: center;
             position: relative;
@@ -133,8 +133,8 @@
 
         /* bunga bawah (kiri bawah) */
         .bungabawah{
-          width: clamp(160px, 20vw, 280px);
-          left: -3%;
+          width: clamp(150px, 15vw, 270px);
+          left: 1%;
           bottom: -4%;
           z-index: 4; /* kalau mau paling depan, naikkan ke 4 */
           opacity: .98;
@@ -143,15 +143,16 @@
         /* Brand Section */
         .brand-section {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 2fr 2fr;
             gap: 60px;
             padding: 100px 80px;
             align-items: start;
         }
 
         .brand-text h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 48px;
-            color: #6b4e4e;
+            color: #864343;
             margin-bottom: 30px;
             font-weight: 600;
         }
@@ -164,7 +165,7 @@
 
         .brand-images {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
             gap: 20px;
         }
 
