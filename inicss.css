@@ -144,21 +144,23 @@
         .brand-section {
             display: grid;
             grid-template-columns: 2fr 2fr;
-            gap: 60px;
-            padding: 100px 80px;
+            gap: 70px;
+            padding: 150px 70px;
             align-items: start;
         }
 
         .brand-text h2 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 48px;
+            font-size: 70px;
             color: #864343;
-            margin-bottom: 30px;
+            margin-top: 50px;
+            margin-bottom: 20px;
             font-weight: 600;
+            text-align: left;
         }
 
         .brand-text p {
-            color: #b89898;
+            color: #977373;
             line-height: 1.8;
             margin-bottom: 20px;
         }
@@ -190,72 +192,48 @@
         }
 
         /* Best Seller Section */
-        .bestseller {
-            padding: 80px 80px 120px;
+        .bestseller{
+            position: relative;
+            z-index: 50;        /* naikin layer section */
+            padding-top: 80px;  /* kasih ruang aman atas */
+            background: #fff;   /* penting: nutup elemen yang nyelonong */
+        }
+
+        .bestseller h2{
+            position: relative; /* biar z-index jalan */
+            z-index: 60;
             text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 70px;
+            margin-top: 10px;
         }
 
-        .bestseller h2 {
-            font-size: 56px;
-            color: #8b6b6b;
-            margin-bottom: 80px;
-            font-weight: 600;
-        }
-
-        .products {
+       .products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 60px;
-            max-width: 1200px;
+            gap: 100px;
+            max-width: 1000px;
             margin: 0 auto;
+            margin-top: 150px;
         }
 
         .product-card {
-            text-align: center;
-            position: relative;
-        }
-
-        .product-glow {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            filter: blur(60px);
-            opacity: 0.6;
-            z-index: 0;
-        }
-
-        .glow-blue {
-            background: radial-gradient(circle, #a8d8ff 0%, transparent 70%);
-        }
-
-        .glow-pink {
-            background: radial-gradient(circle, #ffb3d9 0%, transparent 70%);
-        }
-
-        .glow-purple {
-            background: radial-gradient(circle, #d4b3ff 0%, transparent 70%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .product-card img {
-            width: 200px;
-            height: auto;
-            position: relative;
+            width: 250px;
+            transition: transform 0.3s ease;
             z-index: 1;
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover img {
-            transform: scale(1.05);
         }
 
         /* Footer */
         footer {
             background: #ffd4e5;
-            padding: 60px 80px 30px;
+            padding: 50px 80px 30px;
+            margin-top: 350px;
         }
 
         .footer-content {
@@ -272,7 +250,7 @@
         }
 
         .footer-brand p {
-            color: #b89898;
+            color: #887272;
             line-height: 1.6;
             font-size: 14px;
         }
@@ -286,7 +264,7 @@
 
         .footer-column a {
             display: block;
-            color: #b89898;
+            color: #887272;
             text-decoration: none;
             margin-bottom: 8px;
             font-size: 14px;
